@@ -13,6 +13,17 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+::-ms-reveal {
+    display: none;
+}
+
+input[type="password"]::-webkit-credentials-auto-fill-button,
+input[type="password"]::-webkit-contacts-auto-fill-button,
+input[type="password"]::-webkit-clear-button {
+    display: none !important;
+    visibility: hidden;
+    pointer-events: none;
+}
 
 .login-container {
     background: rgba(255, 255, 255, 0.95);
